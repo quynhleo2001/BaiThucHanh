@@ -1,0 +1,14 @@
+<h2>@ViewBag.message </h2>
+<form asp-action="Index">
+    <label>FullName</label>
+    <input type="text" name="FullName">
+    <input typw="submit" value="Send">
+
+</form>
+<form asp-action="TinhTong">
+    <label>Nhap vao so nguyen duong:</label>
+    <input type="text" name="Number">
+    <input type="submit" name="Tong cua cac chu so">
+
+</form>
+<h1>Tong cac chu so = @ViewBag.Sum</h1>
