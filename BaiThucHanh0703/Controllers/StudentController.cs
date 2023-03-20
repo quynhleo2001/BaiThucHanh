@@ -34,6 +34,13 @@ namespace BaiThucHanh0703.Controllers
 
          return View();
        }
+        public IActionResult GiaiPhuongTrinhBac1()
+       {
+        return View();
+       }
+      
+
+
        public IActionResult GiaiPhuongTrinhBac2()
        {
         return View();
@@ -44,7 +51,7 @@ namespace BaiThucHanh0703.Controllers
         //khai bao bien
         double delta , x1, x2, a=0, b=0, c=0;
         string ketqua;
-        //giai phuong trinh bac 2
+        //giai phuong trinh bac 2.có dự liệu của hệ số A từ view gửi lên, chuyển đổi kiểu dữ liệu từ string sang double và gán vào a
         if(!String.IsNullOrEmpty(hesoA)) a = Convert.ToDouble(hesoA);
          if(!String.IsNullOrEmpty(hesoB)) b = Convert.ToDouble(hesoB);
           if(!String.IsNullOrEmpty(hesoC)) c = Convert.ToDouble(hesoC);
@@ -67,7 +74,7 @@ namespace BaiThucHanh0703.Controllers
             ketqua = "Phuong trinh co 2 nghiem phan biet: x1 =" + x1 + ", x2 = " + x2;
           }
         }
-        @ViewBag.message = ketqua;
+        @ViewBag.message = ketqua ;
         return View();
        }
 
